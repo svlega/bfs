@@ -1,0 +1,15 @@
+<div class="container" ng-controller="PostCtrl">
+	<div class="row text-right">
+		<a  href="#/post/">Back to Blog</a></td>		
+	</div>
+	<div class="row">
+		<h1>{{post.title}}</h1>
+		<p>{{post.body}}</p>
+		<h3 class="post-comments"> {{comments.length}} Comments: </h3>
+	</div>
+	
+	<div class="row" ng-repeat="comment in comments">		
+		<span class="text-primary">{{comment.name}}</span>
+		<p>{{comment.body}}</p>		
+	</div>
+</div>
